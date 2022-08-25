@@ -1,0 +1,61 @@
+<%- include('particles/header.ejs') %>
+
+<%- include('particles/navigation.ejs') %>
+<div class="logo">
+  <div class="homelog">
+    <div>
+      <p class="logp">Пельмени самые</p>
+      <p class="logpp">сочные и вкусные!</p>
+    </div>
+    <a><button class="zakaz">ЗАКАЗАТЬ ПЕЛЬМЕШКИ</button></a>
+  </div>
+</div>
+<div class="djf">
+
+  <marquee direction="right" scrollamount="5">
+    <img class="mar-d" src="/img/klevi.png" />
+  </marquee>
+</div>
+<marquee class="mar-r" direction="right" scrollamount="5"><a href="https://foodzo.ru/?utm_source=Yandex&utm_medium=cpc&utm_campaign=66909580_search&utm_content=11317018347&utm_term=---autotargeting&etext=2202.gXwLjnL8QXIi53VM5d2HoGaEkSXYqQwu0JeIqPWOdHmDie1NHtEIBRXTkz9DUh34anBvY21hZ2liZXZ1b2tjdg.cdb1e8a9626f322d19462f034d7ba1e8c353340a&yclid=3794328160864100973">Здесь могла быть ваша реклама</a></marquee>
+
+<div class="container">
+
+  <% for (let i = 0; i < items.length; i++) { %>
+
+
+  <div class="section">
+
+    <a href="/items/<%= items[i].id %>">
+      <h2 class="section__title"><%= items[i].title %></h2>
+      <img class="section__image" src="img/<%= items[i].image %>">
+
+    </a>
+
+    <form action="/delete" method="post">
+      <input type="hidden" value="<%= items[i].id %>" name="id">
+      <input class="form-button" type="submit" value="Удалить">
+    </form>
+
+  </div>
+
+  <% } %>
+
+</div>
+
+<div class="klass">
+
+  <div class="blur">
+
+    <p class="klass-name-one">ПОЛУЧИ СУПЕР-СКИДКУ В 0,1%!!!</p>
+    <p class="klass-name-two">Все очень просто!</p>
+    <p class="klass-name-three">Оставьте свои данные, номер телефона,
+      номер карты и место проживания (100% не обман)</p>
+    <div class="h">
+
+      <a class="support" tabindex="1">
+        <span class="tip-click">ПОЛУЧИТЬ СКИДКУ!</span>
+</a>
+    </div>
+  </div>
+
+  <%- include('particles/footer.ejs') %>

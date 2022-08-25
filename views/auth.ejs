@@ -1,0 +1,40 @@
+<%- include('particles/header.ejs') %>
+
+<%- include('particles/navigation.ejs') %>
+<div class="con">
+<div class="containera">
+<form action="/login" method="post">
+    <div class="form-group-auf">
+        <p class="p">Войти</p>
+        <label class="form-group__label-auf" for="name">Имя пользователя</label>
+        <input class="form-group__input-auf" type="text" id="name" name="name" placeholder="Имя пользователя">
+    </div>
+
+    <div class="form-group-auf">
+        <label class="form-group__label-auf" for="password">Пароль</label>
+        <input class="form-group__input-auf" type="password" id="password" name="password" placeholder="Пароль">
+    </div>
+
+    <input class="form-button-auf" type="submit" value="Войти">
+</form>
+</div>
+
+<div class="containeraa">
+<form action="/register" method="post">
+    <div class="form-group-auf">
+        <p class="p">Зарегистрироваться</p>
+        <label class="form-group__label-auf" for="name">Имя пользователя</label>
+        <input class="form-group__input-auf" type="text" id="name" name="name" placeholder="Имя пользователя">
+    </div>
+
+    <div class="form-group-auf">
+        <label class="form-group__label-auf" for="password">Пароль</label>
+        <input class="form-group__input-auf" type="password" id="password" name="password" placeholder="Пароль">
+    </div>
+
+    <input class="form-button-auf" type="submit" value="Зарегистрироваться">
+</form>
+</div>
+</div>
+
+<%- include('particles/footer.ejs') %>
