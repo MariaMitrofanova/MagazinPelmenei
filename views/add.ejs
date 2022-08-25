@@ -1,0 +1,27 @@
+<%- include('particles/header.ejs') %>
+
+<%- include('particles/navigation.ejs') %>
+
+<form action="/store" method="post">
+
+    <div class="group">
+        <div class="skrepsh">Добавь своего скрипыша в наш каталог!🥳😱🤑</div>
+            <div class="container-add">
+
+    <div class="form-group">
+        <label class="form-group__label" for="title">Название</label>
+        <input class="form-group__input" type="text" id="title" name="title" placeholder="Название">
+    </div>
+
+    <div class="form-group">
+        <label class="form-group__label" for="image">Картинка</label>
+        <input class="form-group__input" type="text" id="image" name="image" placeholder="Картинка">
+    </div>
+
+    <input class="form-button-group" type="submit" value="Создать">
+</div>
+</div>
+
+</form>
+
+<%- include('particles/footer.ejs') %>
