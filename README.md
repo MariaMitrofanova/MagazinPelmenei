@@ -1,2 +1,0 @@
-# MagazinPelmenei
-магазин пельменей
